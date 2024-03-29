@@ -1,39 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja stranica</title>
-    <link rel="stylesheet" href="./novi.css">
+    <link rel="stylesheet" href="./styles/novi.css">
+    <link rel="stylesheet" href="./styles/novi2.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
 </head>
+
 <body>
     <header class="Header">
         <div class="header-line">
             <h1 class="full-width-header">Moja stranica sa vertikalnim tabovima</h1>
         </div>
     </header>
-    <section class="tabs-container">
-        <label for="tab1">First tab</label>
-        <label for="tab2">Second tab</label>
-        <label for="tab3">Third tab</label>
-    </section>
 
-    <input name="tab" id="tab1" type="radio" checked>
-    <section class="tab-content">
-        <h2>Tab Heading</h2>
-        <p>Your paragraph goes here</p>
-    </section>
+    <div class="menu-wrapper">
 
-    <input name="tab" id="tab2" type="radio">
-    <section class="tab-content">
-        <p>Content for tab2</p>
-    </section>
+        <!-- hamburger icon-->
+        <input data-function="swipe" id="swipe" type="checkbox">
+        <label data-function="swipe" for="swipe">&#xf0c9</label>
 
-    <input name="tab" id="tab3" type="radio">
-    <section class="tab-content">
-        <p>Content for tab3</p>
-    </section>
+        <div class="sidebar">
+            <section class="tabs-container">
+                <label for="tab1">First tab</label>
+                <label for="tab2">Second tab</label>
+                <label for="tab3">Third tab</label>
+                <label for="tab4">Fourth tab</label>
+            </section>
+        </div>
+
+        <div class="content1">
+
+            <input name="tab" id="tab1" type="radio" checked>
+            <section class="tab-content">
+                <h2>Tab Heading</h2>
+                <p>Your paragraph goes here</p>
+            </section>
+
+            <input name="tab" id="tab2" type="radio">
+            <section class="tab-content">
+                <p>Content for tab2</p>
+            </section>
+
+            <input name="tab" id="tab3" type="radio">
+            <section class="tab-content">
+                <p>Content for tab3</p>
+            </section>
+
+            <input name="tab" id="tab4" type="radio">
+            <section class="tab-content">
+                <div class="container">
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <img src="./img/barcode.png" alt="">
+                                <h3>Design</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi facere animi
+                                    itaque eos ratione magnam minus nobis enim saepe qui fugiat velit alias perspiciatis
+                                    amet</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <img src="./img/barcode.png" alt="">
+                                <h3>Code</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi facere animi
+                                    itaque eos ratione magnam minus nobis enim saepe qui fugiat velit alias perspiciatis
+                                    amet</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <img src="./img/barcode.png" alt="">
+                                <h3>Launch</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi facere animi
+                                    itaque eos ratione magnam minus nobis enim saepe qui fugiat velit alias perspiciatis
+                                    amet</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
 
 </body>
+
 </html>
